@@ -39,15 +39,14 @@ int main()
         if (deltaTimeMS > 0) {
             world.UpdatePhysics(deltaTimeMS);
             lastTime = currentTime;
+            
+             window.clear(Color (0,0,0));
+             window.draw(ball);
+             window.draw(floor);
+             window.display();
+             while (true);
         }
-
     }
-
-    window.clear(Color (0,0,0));
-    window.draw(ball);
-    window.draw(floor);
-    window.display();
-    while (true);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
